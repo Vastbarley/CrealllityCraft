@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Orbitron', sans-serif; 
+}
+
+.inicio {
+    position: relative;
+    height: 100%;
+    background-image: url('./logo creallity craft.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.inicio2 {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+.inicio h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.inicio button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inicio button:hover {
+    background-color: #218838;
+}
+
+
+@media screen and (min-width: 768px) {
+    .inicio h1 {
+        font-size: 2.5em;
+    }
+
+    .inicio button {
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .inicio h1 {
+        font-size: 3em;
+    }
+
+    .inicio button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .inicio h1 {
+        font-size: 3em;
+    }
+
+    .inicio button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreallityCraft - Impresiones 3D</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        header {
+            background-color: #0e6eff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: slide-down 1s ease-out;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            width: 80px; 
+            height: 80px;
+        }
+
+        header h1 {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .cart-icon {
+            width: 50px; /* Ajusta el tamaño del ícono del carrito */
+            height: 50px;
+            cursor: pointer;
+        }
+
+        nav {
+            background-color: #0e6eff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #0c469c;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 10px;
+            width: 30%;
+            text-align: center;
+            animation: fade-in 1.5s ease-in-out;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #062c66;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            animation: slide-up 1s ease-out;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes slide-down {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes slide-up {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo creallity craft.png" alt="Logo CreallityCraft">
+        <h1>CreallityCraft - Impresiones 3D</h1>
+        <img src="carrito.webp" alt="Carrito de Compras" class="cart-icon" onclick="location.href='carrito.html'">
+    </header>
+
+    <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="#footer">Contacto</a> 
+    </nav>
